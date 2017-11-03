@@ -1,0 +1,25 @@
+﻿.tooltip_container{
+    position:absolute; 
+    display:none;
+    background-color:#FFFFFF;
+    border:solid #ddd 1px;
+    
+    -moz-border-radius: 6px 6px 0px 0px;      /* Gecko browsers */
+   -webkit-border-radius: 6px 6px 0px 0px;   /* Webkit browsers */
+   border-radius: 6px 6px 0px 0px;            /* W3C syntax */
+    
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+}
+
+.tooltip_title{
+    width:100%;
+    height:20px;
+    background-color:#ddd;	
+    display:none;
+}
+
+.tooltip_content{
+	  width:100%;
+}

@@ -1,0 +1,126 @@
+﻿/**
+options:{
+  modal:模式对话框，
+  title：标题，
+  contents：内容，
+  buttons：[//按钮
+      {title:名称，handler：点击事件}，....
+  ]
+  onExit:退出事件
+}
+*/
+define(["UI","css!wdk/layout/css/Dialog.css"],function() {
+       
+       return function(options){
+       	   	var me=this;
+        	  options=options || {};
+            
+            this.init=function(){ 	  
+             	  
+             	  if(options.modal){
+             	      this.background=$("<div class='Dialog_background'></div>");
+             	      this.background.css({
+             	          width:$(document).width()+"px",	
+             	          height:$(document).height()+"px",
+             	      })
+             	      $(document.body).append(this.background);
+             	  }
+             	  
+             	  this.root=$("<div class='Dialog_container' draggable='true' >"
+             	             +"     <div class='Dialog_titleBar'>"
+             	             +"        <div class='Dialog_exitbutton'><img src='/images/exit.png'/></div>"
+             	             +"     </div>"
+             	             +"     <div class='Dialog_content'></div>"
+             	             +"</div>");
+             	   
+             	   this.root.draggable({ handle: $(".Dialog_titleBar",this.root)});       
+                 
+                 
+                 if(options.title){
+                     this.root.find(".Dialog_titleBar").append($("<div class='Dialog_title'>"+options.title+"</div>"));
+                 }
+                 
+                                 
+                 if(options.content){
+                     this.appendContent(options.content);   
+                 }
+                 
+                  //添加工具栏
+                 if(options.buttons){
+                 	  var toolbar=$("<div class='Dialog_toolbar'><div>");
+                 	  $.each(options.buttons,function(i,item){
+                 	  	  var button=$("<div class='Dialog_button'>"+item.title+"<div>");
+                 	  	  button.click(function(){
+                 	  	      item.handler();	
+                 	  	  });
+                 	  	  
+                 	  	  button.hover(
+                 	  	      function(){
+                 	  	      	  $(this).toggleClass("Dialog_button_mouseover")
+                 	  	      },
+                 	  	      function(){
+                 	  	      	  $(this).toggleClass("Dialog_button_mouseover")
+                 	  	      }
+                 	  	  )
+                 	  	  toolbar.append(button);
+                 	  })
+                    this.root.append(toolbar);	
+                 }
+                 
+                 //退出事件
+                 this.root.find(".Dialog_exitbutton").find("img").click(function(){
+                 	 
+                     if(options.onExit){
+                        options.onExit.call(me);
+                     }else{
+                        me.destory();	
+                     }
+                 });
+                 
+                 $(document.body).append(this.root);
+                 
+                 
+                 var left=($(window).width()-this.root.width())/2;
+                 var top=(window.innerHeight-this.root.height())/2;	
+                 this.root.css({
+                     top:top+"px",
+                     left:left+"px"
+                 });
+            }     
+       
+            this.appendContent=function(content){
+            	  if($.isArray(content)){
+            	  	  $.each(content,function(i,item){
+            	          me.root.find(".Dialog_content").append($(item));	
+            	      })
+            	  }else{
+            	  	  this.root.find(".Dialog_content").append(content);	
+            	  }
+            }           
+            
+            this.hide=function(){
+            	  if(this.background){
+            	  	 this.background.fadeOut("fast");
+            	  }
+            	  this.root.fadeOut("fast");
+            }
+            
+            this.show=function(){
+            	  if(this.background){
+            	  	 this.background.fadeIn("fast");
+            	  }
+            	  this.root.fadeIn("fast");
+            }
+            
+            this.destory=function(){
+            	  if(this.background){
+            	  	 this.background.remove();
+            	  }
+            	  this.root.remove();
+            }
+            
+            this.init();
+       } 
+        
+    }
+);

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<listener>
+		<listener-class>com.wdk.system.InitializeSystemListener</listener-class>
+	</listener>
+
+
+	<!-- Filter-->
+	<filter>
+		<filter-name>setCharacterEncoding</filter-name>
+		<filter-class>com.wdk.system.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>setCharacterEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+<!-- 
+    <filter>
+		<filter-name>WeixinFilter</filter-name>
+		<filter-class>com.wdk.system.WeixinFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>WeixinFilter</filter-name>
+		<url-pattern>/weixin/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	
+ -->
+	<servlet>
+		<servlet-name>WXHttpHandler</servlet-name>
+		<servlet-class>com.weixin.servlet.WXHttpHandler</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>UploadPicture</servlet-name>
+		<servlet-class>com.wdk.upload.UploadPicture</servlet-class>
+		<init-param>
+			<param-name>Directory</param-name>
+			<param-value>/PrivateDirectory</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>upload_image_maxWidth</param-name>
+			<param-value>960</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>upload_image_maxHeight</param-name>
+			<param-value>640</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+
+		<multipart-config>
+			<max-file-size>52428800</max-file-size>
+			<max-request-size>52428800</max-request-size>
+			<file-size-threshold>0</file-size-threshold>
+		</multipart-config>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>privateDirSession</servlet-name>
+		<servlet-class>com.wdk.upload.privateDirSession</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>getSystemNotifies</servlet-name>
+		<servlet-class>com.wdk.advertisement.getSystemNotifies</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>getUserMessage</servlet-name>
+		<servlet-class>com.wdk.user.getUserMessage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Enrol</servlet-name>
+		<servlet-class>com.wdk.user.Enrol</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Log</servlet-name>
+		<servlet-class>com.wdk.user.Log</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>getValidcodePicture</servlet-name>
+		<servlet-class>com.wdk.util.getValidcodePicture</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>registeWeixinIDAndQr</servlet-name>
+    <servlet-class>com.wdk.unit.registeWeixinIDAndQr</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UnitSession</servlet-name>
+    <servlet-class>com.wdk.unit.UnitSession</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>getMyUnit</servlet-name>
+    <servlet-class>com.wdk.unit.getMyUnit</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>modifyUnit</servlet-name>
+    <servlet-class>com.wdk.unit.modifyUnit</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UnitSessionFromWeixin</servlet-name>
+    <servlet-class>com.wdk.unit.UnitSessionFromWeixin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>searchUnit</servlet-name>
+    <servlet-class>com.wdk.unit.searchUnit</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>WXHttpHandler</servlet-name>
+		<url-pattern>/WXHttpHandler</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadPicture</servlet-name>
+		<url-pattern>/UploadPicture</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>privateDirSession</servlet-name>
+		<url-pattern>/privateDirSession</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>getSystemNotifies</servlet-name>
+		<url-pattern>/getSystemNotifies</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>getUserMessage</servlet-name>
+		<url-pattern>/getUserMessage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Enrol</servlet-name>
+		<url-pattern>/Enrol</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Log</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>getValidcodePicture</servlet-name>
+		<url-pattern>/getValidcodePicture</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registeWeixinIDAndQr</servlet-name>
+    <url-pattern>/registeWeixinIDAndQr</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UnitSession</servlet-name>
+    <url-pattern>/UnitSession</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getMyUnit</servlet-name>
+    <url-pattern>/getMyUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modifyUnit</servlet-name>
+    <url-pattern>/modifyUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UnitSessionFromWeixin</servlet-name>
+    <url-pattern>/weixin/UnitSessionFromWeixin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchUnit</servlet-name>
+    <url-pattern>/searchUnit</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

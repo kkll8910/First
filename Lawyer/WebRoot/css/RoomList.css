@@ -1,0 +1,7 @@
+.room{
+	  line-height:47px;
+	  margin: 5px auto;
+	  border:solid #CCCCCC 1px;
+	  text-align:center;
+	  cursor:pointer;
+}

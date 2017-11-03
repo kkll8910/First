@@ -1,0 +1,54 @@
+.CollapsiblePanel_container{
+	  width:96%;
+	  clear:both;
+	  margin:10px 0 0 0;
+	  float:left;
+}
+
+.CollapsiblePanel_toolbar{
+  clear:both;
+	width:100%;
+	height:30px;
+	background-color:#284452;
+	cursor:pointer;
+   
+   -moz-border-radius: 4px 4px 0px 0px;      
+   -webkit-border-radius: 4px 4px 0px 0px;  
+   border-radius: 4px 4px 0px 0px;
+}
+
+.CollapsiblePanel_cp{
+	 float:left;
+	 color:#FFFFFF;
+	 height:30px;
+	 width:12px;
+	 line-height:30px;
+	 font-weight:bold;
+	 margin:0 0 0 10px;
+}
+
+.CollapsiblePanel_title{
+	 float:left;
+	 color:#FFFFFF;
+	 height:30px;
+	 line-height:30px;
+	 margin:0 0 0 10px;
+}
+
+
+.CollapsiblePanel_body{
+		width:100%;
+	  clear:both;
+	  background-color:#32505f;
+	  float:left;
+}
+     
+.CollapsiblePanel_bottom{     
+	  width:100%;
+	  height:4px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+    background-color:#284452;
+    float:left;
+}

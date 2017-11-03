@@ -1,0 +1,56 @@
+.Showcase_container{
+	 float:left;
+	 
+	 margin-bottom:30px;
+	 position: relative;  
+}
+
+.Showcase_entity_list{
+	
+}
+
+
+
+.Showcase_entity_container{
+	 float:left;
+	 position: relative;        
+	 border:solid #ccc 1px;
+	 margin:10px;
+	 display:none;
+}
+
+.Showcase_entity_discription_container{
+	 position: absolute; 
+   left: 0;
+   bottom: 0;
+   background-color:#000000; 
+	 opacity:0.5; 
+	 -moz-opacity:0.5; 
+	 filter:alpha(opacity=50);
+	 width:100%;
+}
+
+.Showcase_entity_discription_item{
+	 margin-top:10px;
+   margin-left:10px;
+   overflow:hidden;	
+   height:20px;
+   line-height:20px;    
+   color:#ffffff;     
+}
+
+.Showcase_entity_discription_item_title{
+	 float:left;
+}
+
+.Showcase_entity_discription_item_text{
+	 float:left;
+	 width:120px;
+	 over-flow:hidden;
+	 text-overflow:ellipsis;
+	 font-size:12px;
+}
+
+.Showcase_entity_show{
+    display:block;	
+}

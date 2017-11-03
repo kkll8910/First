@@ -1,0 +1,77 @@
+﻿requirejs.config({
+	  baseUrl: '/js',
+    paths : {
+      jquery : "jquery-2.1.4.min",
+      jqMobile:['mobile/jquery.mobile-1.4.5.min'],
+            
+      SelectImageDialog:"wdk/input/SelectImageDialog",
+      UploadButton:"wdk/input/UploadButton"
+    },
+    
+    shim:{
+    	  "jqMobile":{ deps: [ 'jquery' ] },
+        "SelectImageDialog":["jquery","jqMobile"],
+        "UploadButton":["jquery"]
+    }
+});
+
+requirejs(["SelectImageDialog",
+           "UploadButton",
+           "jqMobile"
+],function(SelectImageDialog,UploadButton) {
+	 $(document).ready(function(){    
+	 	   
+       
+       $("#saveRoseButton").click(function(){
+       	   var obj={
+       	   	   RequestFlag:"modifyUnit",
+       	   	   UnitID:window.unit.id,
+       	   	   title:$("#input_Title").val(),
+       	   	   keywords:$("#input_Keywords").val(),
+       	   	   thumbnail:$("#img_Thumbnail").attr("src"),
+       	   	   discription:editor.html()
+       	   }
+       	   
+       	   
+       	   if(!obj.title){
+       	       setHitMessage("hit_Title","请输入个性签名");
+       	       return;
+       	   }else{
+       	   	   setHitMessage("hit_Title");
+       	   }
+       	          	   
+       	   
+       	   $.ajax({
+            	type: "POST",
+              dataType: "json",
+              url:"/UnitSession",
+              data: obj,
+              success: function(data){
+              	  if(data.Failure){
+              	  	  window.wdk.popup({
+       	   	   	          title:"操作失败",
+       	   	   	          text:"稍后请重试，或者刷新本页面。"
+       	   	          })		
+              	  }else if(data.Forbidden){
+              	  	  
+              	  	  if(data.Forbidden.Title){
+              	  	  	  setHitMessage("hit_Title","“<span style='color:#FF9900'>"+data.Forbidden.Title+"</span>”这些词不允许出现，请更正");
+              	  	  }
+              	  	  
+              	  	  if(data.Forbidden.Keywords){
+              	  	  	  setHitMessage("hit_Keywords","“<span style='color:#FF9900'>"+data.Forbidden.Keywords+"</span>”这些词不允许出现，请更正");
+              	  	  }
+              	  	  
+              	  	  if(data.Forbidden.Discription){
+              	  	  	  setHitMessage("hit_Discription","“<span style='color:#FF9900'>"+data.Forbidden.Discription+"</span>”这些词不允许出现，请更正");
+              	  	  }
+              	  }else if(data.Success){
+              	  	  window.location.href="/myUnit.jsp?UnitID="+window.unit.id;
+              	  }
+    	        }
+           });
+       });
+       
+       
+   }) 
+}); 

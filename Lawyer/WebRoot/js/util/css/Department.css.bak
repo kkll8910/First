@@ -1,0 +1,23 @@
+.dpt_icon{
+	  height:18px;
+	  width:18px;
+	  margin-top:3px;
+	  background-color:#eee;
+	  -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;	
+}
+.dpt_icon img{
+    margin:2px;	
+}
+
+.dpt_name{
+	  height:24px;
+	  line-height:24px;
+	  cursor:pointer;
+}
+
+.dpt_name_selected{
+    color:#ff9900;
+    font-weight:bold;	
+}

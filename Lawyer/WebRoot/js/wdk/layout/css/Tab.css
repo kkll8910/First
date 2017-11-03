@@ -1,0 +1,42 @@
+.container{
+    margin:10px 4px 0 4px;
+}
+
+.tabList{
+	  height:36px;
+    background-image: url(/images/bg/tab_underline.png);
+    clear:both;
+}
+.unselected{
+	  height:36px;
+	  line-height:36px;
+	  float:left;
+	  padding:0 12px 0 12px;
+	  border:0px;
+	  margin:0px;
+	  text-align:center;
+	  font-size:14px;
+	  font-weight:bold;
+	  cursor:pointer;
+	  -moz-border-radius: 4px 4px 0px 0px;      /* Gecko browsers */
+    -webkit-border-radius: 4px 4px 0px 0px;   /* Webkit browsers */
+    border-radius: 4px 4px 0px 0px;
+}
+
+.selected{
+	  border: 1px solid #bbb;
+	  border-bottom:0px;
+	  background-color:#fff;
+	  color:#006699;
+}
+
+.contentContainer{
+	  clear:both;
+	  border: 1px solid #bbb;
+	  border-top:0px;
+	  -moz-border-radius: 0px 0px 4px 4px;      /* Gecko browsers */
+    -webkit-border-radius: 0px 0px 4px 4px;   /* Webkit browsers */
+    border-radius: 0px 0px 4px 4px;
+    overflow:hidden;zoom:1;
+}
+

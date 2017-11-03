@@ -1,0 +1,58 @@
+.review_botton{
+	  float:left;
+	  padding:5px;
+	  
+	  width:200px;
+    height:24px;
+    line-height:24px;
+    
+    -moz-border-radius: 6px;      
+    -webkit-border-radius:6px;   
+
+    -webkit-box-shadow: #666 0px 0px 5px;
+    -moz-box-shadow: #666 0px 0px 5px;
+    box-shadow: #666 0px 0px 5px;	
+    
+    border: 1px solid #fa9d3b;
+    margin-left:10px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.review_botton:hover{
+	  background-color:#FF6600;
+}
+
+.DocumentContainer{
+    clear:both;
+    width:100%;	
+    float:left;
+    margin:0px 0 6px 0;
+    border-bottom:solid #006699 2px;
+    overflow-Y:scroll;
+}
+
+#reviewlist{
+    overflow-Y:scroll;
+}
+
+.docListItem{
+    width:96%;
+    margin:8px;	
+    cursor:pointer;
+    
+}
+
+.docListItem:hover{
+	 text-decoration: underline;
+	 color:#FF6600;
+}
+
+#preview_thumbnail{
+	width: 80px;
+  height: 80px;
+}
+
+#preview_title{
+	vertical-align: middle;
+}

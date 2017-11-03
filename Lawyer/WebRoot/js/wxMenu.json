@@ -1,0 +1,53 @@
+﻿{
+  "button":[
+     {  
+        "name":"全部",
+        "sub_button":[
+            {"type":"view","name":"微信角色","url":"http://wangdengke.s3.natapp.cc/weixin/list.jsp"},
+            {"type":"view","name":"我要发布","url":"http://wangdengke.s3.natapp.cc/weixin/createUnit.jsp"}
+        ]
+     },
+     
+     {  
+        "name":"游戏",
+        "sub_button":[
+            {"type":"view","name":"抢红包","url":"http://wangdengke.s3.natapp.cc/weixin/packet.jsp"}
+        ]
+     },
+     
+     {  
+        "name":"我的账户",
+        "sub_button":[
+            {"type":"view","name":"我要充值","url":"http://wangdengke.s3.natapp.cc/weixin/rechage.jsp"},
+            {"type":"view","name":"明细","url":"http://wangdengke.s3.natapp.cc/weixin/details.jsp"}
+        ]
+     }
+   ]
+ }
+ 
+ 
+ 
+ {
+  "button":[
+  	 {"type":"view","name":"律师协作","url":"http://wdk.natapp1.cc/weixin/home.jsp"},
+  	 {  
+        "name":"我的业务",
+        "sub_button":[
+            {"type":"view","name":"我要接单","url":"http://wdk.natapp1.cc/weixin/OrderList.jsp"},
+            {"type":"view","name":"我要发单","url":"http://wdk.natapp1.cc/weixin/PublicOrder.jsp"},
+            {"type":"view","name":"我的单子","url":"http://wdk.natapp1.cc/weixin/myOrders.jsp"},
+            {"type":"view","name":"我的收藏","url":"http://wdk.natapp1.cc/weixin/myCollection.jsp"}
+        ]
+     },
+  	
+     {  
+        "name":"我的账号",
+        "sub_button":[
+            {"type":"view","name":"管理员入口","url":"http://wdk.natapp1.cc/ManagerMain.jsp"},
+            {"type":"view","name":"账户信息","url":"http://wdk.natapp1.cc/weixin/UserMessage.jsp"},
+            {"type":"view","name":"认证信息","url":"http://wdk.natapp1.cc/weixin/LawyerAuthentication.jsp"},
+            {"type":"view","name":"我的余额","url":"http://wdk.natapp1.cc/weixin/myAccount.jsp"}
+        ]
+     }
+   ]
+ }

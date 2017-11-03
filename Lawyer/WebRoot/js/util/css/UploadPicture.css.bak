@@ -1,0 +1,59 @@
+.uploader_container{
+	  
+	  
+}
+
+
+
+.uploader_preview{
+    height:240px;
+	  line-height:240px;
+	  font-size:32px;
+	  margin:0px auto;
+	  
+	  border: 1px solid #ccc;
+	  
+	  border-radius: 4px;
+	  -moz-border-radius: 4px; 
+    -webkit-border-radius:4px;	
+    text-align:center;
+    cursor:pointer;
+}
+
+.uploader_discription{
+	  
+}
+
+.upload_input_container{
+	clear:both;
+	margin:10px auto;
+	height: 34px;
+	line-height: 34px;
+	
+}
+
+.upload_input_title{
+	  float:left;
+	  height: 34px;
+	  line-height: 34px;
+	  width:80px;
+	  text-align:right;
+	  color:#069;
+}
+
+.upload_input{
+	  width:520px;
+	  float:left;
+	  height: 34px;
+	  line-height: 34px;
+	  padding:0px 10px;
+	  border: 1px solid #ccc;
+	  
+	  border-radius: 4px;
+	  -moz-border-radius: 4px; 
+    -webkit-border-radius:4px;	
+}
+
+#multiForm{
+	  display:none;
+}

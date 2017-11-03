@@ -1,0 +1,43 @@
+﻿
+.PictureSelector_list{
+	 
+	  margin:0px;
+	  width:100%;
+    height:360px;
+    overflow:auto;
+    background-color:#FFFFFF;
+}
+
+.PictureSelector_thumbnail{
+	  height:120px;
+	  width:160px;
+	  margin:0px 10px 10px 0px;
+	  border:solid transparent 4px;
+	  overflow-y:auto;
+	  float:left;
+	  position:relative;
+	  
+    cursor:pointer;
+}
+
+.PictureSelector_thumbnail:active {
+    border:solid green 4px;
+	 -webkit-box-shadow: #666 0px 0px 10px;
+   -moz-box-shadow: #666 0px 0px 10px;
+   box-shadow: #666 0px 0px 10px;
+   background-color:#green;
+}
+
+
+.PictureSelector_thumbnail img{
+	  z-index:2;
+	  max-width:160px;
+	  _width:expression(this.width > 120 ? "120px" : this.width);
+} 
+
+.PictureSelector_selected{
+	 border:solid green 4px;
+	 -webkit-box-shadow: #666 0px 0px 10px;
+   -moz-box-shadow: #666 0px 0px 10px;
+   box-shadow: #666 0px 0px 10px;
+}

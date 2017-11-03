@@ -1,0 +1,59 @@
+﻿.NavigateTabContainer_container{
+    width:100%;
+    height:100%
+}
+
+.NavigateTabContainer_tablist{
+   width:100%;
+   float:left;
+   background-color:#284452;
+}
+
+.NavigateTabContainer_contentlist{
+   width:100%;
+   overflow:auto;
+   float:left;
+}
+
+
+.NavigateTabContainer_iframe{
+    width:100%;
+    height:96%;	
+    display:none;
+    border:0px;
+}
+
+.NavigateTabContainer_tab{
+	 float:left;
+	 font-size:14px;
+	 color:#FFFFFF;
+	 padding:6px;
+	 height:24px;
+	 line-height:24px;
+	 background-color:transparent;
+	 min-width:80px;
+	 text-align:center;
+}
+
+.NavigateTabContainer_tab_selected{
+	 border:solid #5c6670 1px;
+	 border-bottom:0;
+	 font-size:14px;
+	 color: #284452;
+	 
+	 background-color:#FFF;
+	 padding:6px;
+	 
+	 -moz-border-radius: 6px 6px 0px 0px;      /* Gecko browsers */
+   -webkit-border-radius: 6px 6px 0px 0px;   /* Webkit browsers */
+   border-radius: 6px 6px 0px 0px;            /* W3C syntax */
+}
+
+.NavigateTabContainer_tab_titletext{
+	float:left;
+}
+
+.NavigateTabContainer_closebutton{
+	float:right;
+	width:12px;
+}

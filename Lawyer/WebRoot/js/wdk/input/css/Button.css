@@ -1,0 +1,60 @@
+﻿.Button_container{
+    height:30px;
+    line-height:30px;
+    
+    -moz-border-radius: 2px;      
+    -webkit-border-radius: 2px;   
+    border-radius: 2px;  
+    
+    font-size:12px;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-right:10px;
+
+    -webkit-box-shadow: #666 0px 0px 5px;
+    -moz-box-shadow: #666 0px 0px 5px;
+    box-shadow: #666 0px 0px 5px;
+}
+
+.Button_samll{
+	 height:30px;
+   line-height:30px;
+    
+    -moz-border-radius: 2px;      
+    -webkit-border-radius: 2px;   
+    
+    border-radius: 2px;  
+    font-size:12px;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-right:10px;
+    padding:3px 5px;
+    -webkit-box-shadow: #666 0px 0px 5px;
+    -moz-box-shadow: #666 0px 0px 5px;
+    box-shadow: #666 0px 0px 5px;
+}
+
+.Gray{
+	  background-color:gray;
+}
+
+.inToolBar{
+	  float:right;
+    margin-top:5px;      
+}
+
+.button_icon{
+	  float:left;
+	  margin-left:4px;
+	  margin-top:7px;
+}
+
+.button_title{
+	  float:left;
+	  color:#FFF;
+	  height:30px;
+    line-height:30px;
+    text-align:center;
+    
+    min-width:48px;
+} 

@@ -1,0 +1,39 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #e7e8eb;
+}
+
+.area_middle {
+	width: 100%;
+	margin: 60px 0px 0 0;
+	clear: both;
+}
+
+.area_top {
+	position: fixed;
+	background-color: #FFFFFF;
+	border: solid #CCCCCC 1px;
+	top: 0;
+	height: 45px;
+	width: 100%;
+	margin: 0px;
+	z-index: 10;
+}
+
+.area_content {
+	width: 1074px;
+	border: solid #CCCCCC 1px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.topHit{
+	float:left;
+	line-height:45px;
+	margin-left:10px;
+	color:#006699;
+}

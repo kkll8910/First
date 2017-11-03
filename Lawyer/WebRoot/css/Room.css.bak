@@ -1,0 +1,149 @@
+#MessagesList{
+    background-color:#6d99be;	
+    width:100%;
+}
+
+body{
+    margin:0px;
+    padding:0px;	
+}
+
+.msg_Container{
+	margin:12px 0 0 0;
+	text-shadow:none;
+	width:320px;
+	clear:both;
+	float:left;
+}
+
+.msg_HeadImage{
+	width:50px;
+	float:left;
+	margin: 0 0 0 5px;
+}
+
+
+.msg_Body{
+	float:left;
+	max-width:260px;
+}
+
+.msg_Nickname{
+	color:#FFFFFF;
+	font-size:12px;
+	margin-bottom:5px;
+}
+
+.msg_Text{
+	
+}
+
+.envelope_container{
+	  width:220px;
+	  
+    -moz-border-radius: 6px;      
+    -webkit-border-radius:6px;   
+    
+    -webkit-box-shadow: #666 0px 0px 5px;
+    -moz-box-shadow: #666 0px 0px 5px;
+    box-shadow: #666 0px 0px 5px;
+    
+}
+
+.envelope_top{
+	  -moz-border-radius: 6px 6px 0 0;      
+    -webkit-border-radius: 6px 6px 0 0;   
+    
+	  width:100%;
+	  height:60px;
+    background-color:#fa9d3b;
+}
+
+.envelope_middle{
+	  width:100%;
+	  background-color:#FFFFFF;
+}
+
+.envelope_bottom{
+	  -moz-border-radius:0 0 6px 6px;      
+    -webkit-border-radius:0 0 6px 6px;   
+    
+    width:100%;
+	  height:30px;
+    background-color:#FFFFFF;
+}
+
+.envelope_top_left{
+	  width:34px;
+	  float:left;
+	  margin:7px;
+}
+
+.envelope_top_right{
+	  float:left;
+}
+
+.envelope_text{
+	  color:#FFFFFF;
+	  text-shadow:none;
+}
+
+.envelope_hint{
+	  height:30px;
+    line-height:30px;
+	  text-align:left;
+    color:#fa9d3b;
+    font-size:12px;
+    margin:0 0 0 10px;.
+}
+
+.MessageInputContainer{
+	  width:100%;
+	  height:50px;
+	  background-color:#FFFFFF;
+	  border:0;
+	  border-top: 1px solid #ccc;
+}
+
+.MessageInputDiv{
+	width:80%;
+	float:left;
+}
+
+
+
+.MessageInputDiv input{
+	 
+	  
+}
+
+
+.SendButton{
+	width:15%;
+	border: 1px solid #fa9d3b;
+	float:right;
+	-moz-border-radius:6px;      
+  -webkit-border-radius:6px;   
+  height:32px;
+  line-height:32px;
+  text-align:center;
+  margin-top:2px;
+}
+
+.sysmsg_Container{
+    clear:both;
+    float:left;
+    margin:10px auto;	
+    width:100%;
+}
+
+.sysmsg_Text{
+	  -moz-border-radius: 2px;      
+    -webkit-border-radius:2px;   
+    
+    color:#FFFFFF;
+    font-size:12px;
+    
+    MARGIN-LEFT: 55px;
+    padding:5px;
+}

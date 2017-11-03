@@ -1,0 +1,48 @@
+﻿.vtc_container{
+	 border:solid gray 1px;
+}
+
+.vtc_dragHandler{
+	  background-color:#32505f;
+    height:32px;	
+}
+
+.vtc_tabs{
+	
+}
+
+.vtc_leftDiv{
+	background-color:#ddd;
+  float:left;
+}
+
+.vtc_rightDiv{
+	float:left;
+	padding-left:10px;
+}
+
+.vtc_tab{
+	  min-width:48px;
+    height:40px;
+    line-height:40px;
+    padding-left:10px;
+    -moz-border-radius: 3px 0px 0px 3px;      
+    -webkit-border-radius: 3px 0px 0px 3px;   
+    border-radius: 3px 0px 0px 3px;  
+    cursor:pointer;
+}
+
+.vtc_tab_selected{
+	  background-color:#FFFFFF;
+	  color:#006699
+}
+
+.vtc_content{
+    display:none;
+}
+
+
+
+.vtc_content_selected{
+	  display:block
+}

@@ -1,0 +1,85 @@
+#picker_levellist{
+	  width:100%;
+	  height:32px;
+	  line-height:32px;
+	  border-bottom:solid #006699 1px;
+	  clear:both;
+}
+
+.td_0{
+	  height:40px;
+	  border:solid #1d1d1d 1px; 
+	  padding:5px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+}
+
+.hitDiv{
+	  float:right;
+    margin-top:8px;
+    font-size:12px;
+    cursor:pointer;
+    text-shadow:0px;
+    color:#ababab;
+}
+
+.picker_levelItem{
+	  float:left;
+    margin:6px 0px 6px 3px;
+    font-size:14px;
+    cursor:pointer;
+    text-shadow:0px;
+   
+
+}
+
+.picker_cityList{
+    width:100%;
+    clear:both;	
+    overflow:hidden;
+    zoom:1;
+}
+
+.picker_cityitemcontainer{
+	float:left;
+	margin: 0 6px 0 6px;
+  font-size:14px;
+}
+
+.picker_cityitemcontainer:hover{
+	background-color:#CCCCCC;
+}
+
+.picker_cityitem{
+	float:left;
+  margin:6px;
+  font-size:14px;
+  cursor:pointer;
+  vertical-align:middle;
+  height:16px;
+  line-height:16px;
+
+  text-shadow:0px;
+}
+
+.picker_checkbox{
+	 float:left;
+	  margin:6px 0 6px 0;
+	 height:16px;
+	 width:16px;
+   background-size:16px;
+   background-image:url(/images/checkbox_blankbord-unselected.png);
+   cursor:pointer;
+   
+}
+
+.picker_checkbox_checked{
+	 background-image:url(/images/icon_correct.png);
+}
+
+.picker_selectedItem{
+	 float:left;
+	 margin:0 12px 12px 0;
+	 cursor:pointer;
+	 font-size:14px;
+}

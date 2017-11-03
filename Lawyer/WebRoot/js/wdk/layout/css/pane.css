@@ -1,0 +1,97 @@
+.Pane_Container_a{
+    width:100%;	
+    border: 1px solid #ddd;
+    -moz-border-radius: 4px;  
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    margin-top:10px;
+}
+
+.Pane_TopDiv_a{
+    height:40px;
+	  line-height:40px;
+	  padding:0 4px 0 4px;
+	  color:#333333;
+	  background-color:#f6f6f6;    	
+	  
+	  -moz-border-radius:4px 4px 0px 0px ;  
+    -webkit-border-radius:4px 4px 0px 0px;
+    border-radius:4px 4px 0px 0px;
+    
+    border-bottom: 1px solid #ddd;
+    cursor:pointer;
+}
+
+.Pane_ContentDiv_a{
+	   margin:4px;
+}
+
+.Pane_Container_b{
+    width:100%;	
+    border: 1px solid #ddd;
+    -moz-border-radius: 4px;  
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    margin-top:10px;
+}
+
+.Pane_TopDiv_b{
+    height:40px;
+	  line-height:40px;
+	  padding:0 4px 0 4px;
+	  
+	  -moz-border-radius:4px 4px 0px 0px ;  
+    -webkit-border-radius:4px 4px 0px 0px;
+    border-radius:4px 4px 0px 0px;
+    
+    border-bottom: 1px solid #ddd;
+    cursor:pointer;
+}
+
+
+.Pane_ContentDiv_b{
+	   margin:4px;
+}
+
+
+.pane_FoldButton{
+	  float:left;
+	  width:20px;
+	  height:20px;
+	  margin:10px 10px 10px 4px;
+	  background-color:#acacac;
+	  -moz-border-radius: 10px;  
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.pane_FoldButton img{
+    margin:3px;	
+}
+
+
+
+.Pane_TopDiv_collapsed{
+    -moz-border-radius:4px;  
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border-bottom: 0px;
+}
+
+
+
+.Pane_TitleDiv{
+	  float:left;
+	  height:40px;
+	  line-height:40px;
+}
+
+.Pane_ButtonDiv{
+	  float:right;
+	  height:32px;
+	  line-height:32px;
+	  margin:4px 10px 4px 0px;
+	  text-decoration:underline ;
+	  	  
+	  
+}
